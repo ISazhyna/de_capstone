@@ -1,0 +1,19 @@
+version: 2
+
+models:
+    - name: thefts_per_district
+      description: Information of thefts (without attempts) per day per lor, district
+      columns:
+        - name: date_start
+        - name: hour
+        - name: lor_name
+        - name: district_name
+        - name: amount_of_damage
+        - name: type_of_bike
+    - name: thefts_per_hour
+      description: Number of thefts per hour per day and district
+      columns:
+        - name: date_start
+        - name: hour
+        - name: district_name
+        - name: thefts
